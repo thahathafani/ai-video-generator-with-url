@@ -2,7 +2,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.1.4",
+    "uniqid": "^5.4.0"
   },
   "name": "backend",
   "version": "1.0.0",
