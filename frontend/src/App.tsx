@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+
+    <main className=" mx-auto flex justify-center h-screen">
+      <div className="p-8">
+        <h1 className="text-4xl font-bold uppercase mb-8">
+            <span className="text-6xl">
+              AI Generated video's from url's.
+            </span>
+        </h1>
+        <p className="text-xl">
+          Effortlessly create and compile videos from your favorite URLs. Transform links into dynamic video content in just a few clicks!
         </p>
+        <form action="">
+          <input className="w-full p-4 bg-transparent border-2 rounded-full mt-4"
+            type="url" placeholder="https://..."/>
+          <div>
+            <button className="p-2 w-full bg-white text-lg text-black justify-center rounded-full mt-4"
+                type="submit">
+                Create Video
+            </button>
+          </div>
+        </form>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="p-8">
+        <div className="bg-gray-200 w-[260px] h-[440px] rounded-2xl p-8">
+            helloo
+        </div>
+      </div>
+    </main>
+      
     </>
   )
 }
