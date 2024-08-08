@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 body{
-    background: linear-gradient(rgb(55, 55, 55) 0%, black 40%) #000;
+    background: linear-gradient(rgb(122, 116, 116) 0%, black 40%) #000;
     @apply text-white max-h-dvh;
 }
